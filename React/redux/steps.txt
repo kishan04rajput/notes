@@ -1,0 +1,16 @@
+npm i redux react-redux
+
+step1: create action.js
+  a) action is a function that returns and object with type key in it.
+step2: create reducer.js
+  a) reducer is a function that take two values currentSatet and action, use switch case in it to perform differnent type of action.
+step3: create store.js
+  a) createStore using redux
+step4: provide store to component
+  a) by using Provide from react-redux wrap the component where store value is needed.
+  b) pass store as a prop in Provide
+step5: consume store by using useSelector
+  a) useSelector from react-redux is a hook that returns the needed value of store.
+  b) used to consume value from store.
+step6: use dispatch to call action
+  a) useDispatch from react-redux is used to call action.

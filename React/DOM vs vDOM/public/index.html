@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>DOM vs VirtualDOM</title>
+  </head>
+
+  <body>
+    <p>
+      The DOM is not stored in any physical file or database. Instead, it’s a
+      logical construct created by the browser when a web page is loaded. The
+      browser parses the HTML, CSS, and JavaScript files of a web page, and then
+      creates the DOM based on these files. The DOM represents the current state
+      of the web page and can be manipulated using JavaScript.
+    </p>
+    <div id="DOM_root"></div>
+
+    <p>
+      The Virtual DOM in React is stored entirely in memory. It’s a JavaScript
+      object that lives in the memory space of your web browser or server (in
+      the case of server-side rendering). The Virtual DOM isn’t stored as a
+      visible part of your application; rather, it’s an internal data structure
+      used by React for its diffing and rendering process.
+    </p>
+    <div id="root"></div>
+  </body>
+</html>

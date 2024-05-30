@@ -1,0 +1,5 @@
+step1: define a variable with createContext()
+step2: wrap the component that provider and add value prop in it.
+step3: export the createContext variable
+step4: in the consuming file, import consumer and createContext variable.
+step5: consumer only accepts a function in it.
