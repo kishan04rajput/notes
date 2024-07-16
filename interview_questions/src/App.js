@@ -1,4 +1,5 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+// import './App.css';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Navbar } from "./components/Navbar";
 import { LandingPage } from "./pages/LandingPage";
 import { JavascriptPage } from "./pages/JavascriptPage";
@@ -12,22 +13,23 @@ import { GitPage } from "./pages/GitPage";
 
 function App() {
   return (
-    <Router>
-      <div>
-        <Navbar />
+    <div>
+      <BrowserRouter>
         <Routes>
-          <Route path="/" element={<LandingPage />} />
-          <Route path="/CssPage" element={<CssPage />} />
-          <Route path="/BootstrapPage" element={<BootstrapPage />} />
-          <Route path="/JavascriptPage" element={<JavascriptPage />} />
-          <Route path="/MongoDbPage" element={<MongoDbPage />} />
-          <Route path="/ExpressPage" element={<ExpressPage />} />
-          <Route path="/ReactPage" element={<ReactPage />} />
-          <Route path="/NodePage" element={<NodePage />} />
-          <Route path="/GitPage" element={<GitPage />} />
+          <Route element={<Navbar />}>
+            <Route index path="/" element={<LandingPage />} />
+            <Route path="/CssPage" element={<CssPage />} />
+            <Route path="/BootstrapPage" element={<BootstrapPage />} />
+            <Route path="/JavascriptPage" element={<JavascriptPage />} />
+            <Route path="/MongoDbPage" element={<MongoDbPage />} />
+            <Route path="/ExpressPage" element={<ExpressPage />} />
+            <Route path="/ReactPage" element={<ReactPage />} />
+            <Route path="/NodePage" element={<NodePage />} />
+            <Route path="/GitPage" element={<GitPage />} />
+          </Route>
         </Routes>
-      </div>
-    </Router>
+      </BrowserRouter>
+    </div>
   );
 }
 
