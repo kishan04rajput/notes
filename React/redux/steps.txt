@@ -1,7 +1,7 @@
 npm i redux react-redux
 
 step1: create action.js
-  a) action is a function that returns and object with type key in it.
+  a) action is a function that returns and object with key "type" in it.
 step2: create reducer.js
   a) reducer is a function that take two values currentSatet and action, use switch case in it to perform differnent type of action.
 step3: create store.js
