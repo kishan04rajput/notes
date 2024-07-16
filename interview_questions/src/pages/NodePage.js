@@ -177,7 +177,7 @@ export const NodePage = () => {
  );
 
   return (
-    <div>
+    <div style={{ marginTop: "11vh" }}>
       {QA.map((item, index) => (
         <div key={index}>
           <QACard question={item.Q} answer={item.A} />

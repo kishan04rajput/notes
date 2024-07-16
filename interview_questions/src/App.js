@@ -14,9 +14,10 @@ import { GitPage } from "./pages/GitPage";
 function App() {
   return (
     <div>
+      <Navbar/>
       <BrowserRouter>
         <Routes>
-          <Route element={<Navbar />}>
+          {/* <Route element={<Navbar />}> */}
             <Route index path="/" element={<LandingPage />} />
             <Route path="/CssPage" element={<CssPage />} />
             <Route path="/BootstrapPage" element={<BootstrapPage />} />
@@ -26,7 +27,7 @@ function App() {
             <Route path="/ReactPage" element={<ReactPage />} />
             <Route path="/NodePage" element={<NodePage />} />
             <Route path="/GitPage" element={<GitPage />} />
-          </Route>
+          {/* </Route> */}
         </Routes>
       </BrowserRouter>
     </div>

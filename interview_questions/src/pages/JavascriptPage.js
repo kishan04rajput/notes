@@ -182,7 +182,7 @@ Event handling allows JavaScript to detect and respond to user actions like clic
   );
 
   return (
-    <div>
+    <div style={{ marginTop: "11vh" }}>
       {QA.map((item, index) => (
         <div key={index}>
           <QACard question={item.Q} answer={item.A} />
