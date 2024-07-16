@@ -17,7 +17,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route element={<Navbar />}>
-            <Route index element={<LandingPage />} />
+            <Route path="/" element={<LandingPage />} />
             <Route path="/CssPage" element={<CssPage />} />
             <Route path="/BootstrapPage" element={<BootstrapPage />} />
             <Route path="/JavascriptPage" element={<JavascriptPage />} />
