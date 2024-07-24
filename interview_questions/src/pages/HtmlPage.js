@@ -186,6 +186,11 @@ Disadvantages: Overuse may impact accessibility and responsiveness.`,
 Column: Apply CSS (border-left, border-right) to <th> or <td> elements in each row.
 Cell: Use CSS (border property) directly on <td> or <th> elements.`,
     },
+    {
+      Q: `What are different HTML layout elements?`,
+      A: `Here is a list of different HTML layout elements:
+<header>, <nav>, <main>, <section>, <article>, <aside>, <footer>, <div>, <figure>, <figcaption>, <dialog>, <details>, <summary>`,
+    },
     // {
     //   Q: ``,
     //   A: ``,
