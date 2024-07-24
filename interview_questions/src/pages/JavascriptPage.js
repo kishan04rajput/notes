@@ -100,13 +100,12 @@ export const JavascriptPage = () => {
     },
     {
       Q: `What is the use of event handling in JS?`,
-      A: `Event handling allows JavaScript to detect and respond to user actions like clicks, keystrokes, or mouse movements, enhancing interactivity.
-Event handling allows JavaScript to detect and respond to user actions like clicks, keystrokes, or mouse movements, enhancing interactivity.`,
+      A: `Event handling allows JavaScript to detect and respond to user actions like clicks, keystrokes, or mouse movements, enhancing interactivity.`,
     },
-    {
-      Q: `What are higher-order functions?`,
-      A: `Higher-order functions are functions that can take other functions as arguments or return them as results, enabling functional programming patterns.`,
-    },
+    // {
+    //   Q: `What are higher-order functions?`,
+    //   A: `Higher-order functions are functions that can take other functions as arguments or return them as results, enabling functional programming patterns.`,
+    // },
     {
       Q: `What are asynchronous operations in JS?`,
       A: `Asynchronous operations allow JavaScript to perform tasks like fetching data from a server or reading files without blocking the execution of other code.`,
@@ -129,7 +128,7 @@ Event handling allows JavaScript to detect and respond to user actions like clic
     },
     {
       Q: `What is the purpose of this in JS?`,
-      A: `The this keyword refers to the current context or object in which the code is executing, often used in methods to access properties and other methods of the object.`,
+      A: `The this keyword is used to access the value of the current context or object in which the code is executing, often used in methods to access properties and other methods of the object.`,
     },
     {
       Q: ``,
