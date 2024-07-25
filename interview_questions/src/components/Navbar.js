@@ -53,7 +53,7 @@ export const Navbar = () => {
             <li>
               <a
                 href="/"
-                className="block py-2 px-3 text-white bg-blue-600 rounded md:bg-transparent md:text-blue-400 md:p-0"
+                className="block py-2 px-3 text-white rounded md:bg-transparent md:text-blue-400 md:p-0"
                 aria-current="page"
               >
                 HTML
