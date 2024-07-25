@@ -1,4 +1,4 @@
-import React from "react";
+import { QAReturn } from "../components/QAReturn";
 
 export const JavascriptPage = () => {
   const QA = [
@@ -156,37 +156,5 @@ export const JavascriptPage = () => {
     },
   ];
 
-  const QACard = ({ question, answer }) => (
-    <div
-      style={{
-        border: "1px solid #ccc",
-        padding: "10px",
-        margin: "10px 0",
-        textAlign: "justify",
-      }}
-    >
-      <div>
-        <strong>Question:</strong> {question}
-      </div>
-      <div>
-        <strong>Answer:</strong>{" "}
-        {answer.split("\n").map((line, index) => (
-          <React.Fragment key={index}>
-            {line}
-            <br />
-          </React.Fragment>
-        ))}
-      </div>
-    </div>
-  );
-
-  return (
-    <div style={{ marginTop: "11vh" }}>
-      {QA.map((item, index) => (
-        <div key={index}>
-          <QACard question={item.Q} answer={item.A} />
-        </div>
-      ))}
-    </div>
-  );
+  return <QAReturn QA={QA} />;
 };
