@@ -15,8 +15,8 @@ export const JavascriptPage = () => {
       A: `A callback function is a function passed into another function as an argument, which is then invoked inside the outer function to complete a specific task.`,
     },
     {
-      Q: `What is an event loop?`,
-      A: `The event loop is a core concept in JavaScript that allows asynchronous callbacks to be executed, enabling non-blocking operations by continuously checking the message queue and executing available tasks.`,
+      Q: `What is the event loop?*`,
+      A: `The event loop is a mechanism that handles the execution of asynchronous operations in JavaScript. It continuously checks the call stack and the task queue (also known as the message queue). If the call stack is empty, the event loop pushes the next function from the task queue to the call stack for execution, ensuring non-blocking behavior in the language.`,
     },
     {
       Q: `What is higher-order function?`,
@@ -131,20 +131,84 @@ export const JavascriptPage = () => {
       A: `The this keyword is used to access the value of the current context or object in which the code is executing, often used in methods to access properties and other methods of the object.`,
     },
     {
-      Q: ``,
-      A: ``,
+      Q: `undefined vs not defined`,
+      A: `undefined: A variable that has been declared but not assigned a value is undefined. It is a property of the global object.
+      not defined: If a variable has not been declared, accessing it will result in a ReferenceError, indicating the variable is not defined.`,
     },
     {
-      Q: ``,
-      A: ``,
+      Q: `What is a lexical environment?`,
+      A: `A lexical environment is a structure that holds the identifiers (variable/function names) and their corresponding values in the scope where the code is written. It includes the current environment and its parent environment (outer scope), forming a scope chain.`,
     },
     {
-      Q: ``,
-      A: ``,
+      Q: `What is a closure?`,
+      A: `A closure is a function that retains access to its lexical environment, including the variables declared in its outer scope, even after the outer function has finished executing. Closures are created every time a function is created.`,
     },
     {
-      Q: ``,
-      A: ``,
+      Q: `What is a scope chain?`,
+      A: `The scope chain is a series of lexical environments that JavaScript searches to resolve variable names. It starts with the innermost scope where the variable is used and proceeds outwards to the global scope.`,
+    },
+    {
+      Q: `What is the temporal dead zone?`,
+      A: `The temporal dead zone (TDZ) refers to the time between the entering of a block and the point where a variable declared with let or const is initialized. During the TDZ, accessing these variables results in a ReferenceError.`,
+    },
+    {
+      Q: `What is the window object?`,
+      A: `The window object is the global object in the browser environment. It represents the browser's window and provides functions and properties for controlling the browser window, interacting with the DOM, and handling events.`,
+    },
+    {
+      Q: `What is shadowing in JavaScript?`,
+      A: `Shadowing occurs when a variable declared within a certain scope (like a function or block) has the same name as a variable declared in an outer scope. The inner variable shadows the outer variable within its scope.`,
+    },
+    {
+      Q: `What is memoization?`,
+      A: `Memoization is an optimization technique that stores the results of expensive function calls and returns the cached result when the same inputs occur again. It helps in avoiding the repeated calculation of the same results`,
+    },
+    {
+      Q: `What is a once function?`,
+      A: `A "once" function ensures that a given function is executed at most once, regardless of how many times it is called. After the first call, subsequent calls return the result of the first invocation without re-executing the function.`,
+    },
+    {
+      Q: `What is currying?`,
+      A: `Currying is a functional programming technique where a function with multiple arguments is transformed into a series of functions, each taking a single argument. It allows the partial application of functions.
+      function add(a) {
+        return function(b) {
+          return a + b;
+        };
+      }
+
+      const addFive = add(5);
+      console.log(addFive(10)); // 15`,
+    },
+    {
+      Q: `What are first-class functions in JavaScript?`,
+      A: `First-class functions are functions that can be treated like any other value. They can be assigned to variables, passed as arguments, returned from other functions, and stored in data structures.`,
+    },
+    {
+      Q: `What is the difference between function statement, function expression, and function declaration?`,
+      A: `Function Declaration: Defines a named function and is hoisted to the top of its scope.
+      function foo() {
+  // function body
+}
+Function Expression: Defines a function as part of an expression, either named or anonymous. Not hoisted.
+const bar = function() {
+  // function body
+};
+Function Statement: This is a commonly used term, but it's typically incorrect. It often refers to function declarations. There isn't a separate category called "function statements."`,
+    },
+    {
+      Q: `What is a named function expression?`,
+      A: `A named function expression is a function expression with a name. This name is only available within the function's scope, making it useful for recursion or self-referencing.
+const factorial = function fact(n) {
+  return n <= 1 ? 1 : n * fact(n - 1);
+};`,
+    },
+    {
+      Q: `What are first-class citizens?`,
+      A: `In JavaScript, first-class citizens refer to entities (functions, objects, etc.) that can be used in all the contexts available to other entities. Functions are first-class citizens because they can be assigned to variables, passed as arguments, and returned from other functions.`,
+    },
+    {
+      Q: `What are web APIs?`,
+      A: `Web APIs are built-in interfaces provided by the browser or other environments that allow developers to interact with the browser, manipulate the DOM, make network requests, store data locally, and perform other tasks beyond the core JavaScript language capabilities. Examples include the DOM API, Fetch API, Web Storage API, and more.`,
     },
     {
       Q: ``,
