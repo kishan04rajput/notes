@@ -238,6 +238,28 @@ export const ReactPage = () => {
       Q: `What are the types of conditional rendering in JSX?*`,
       A: `Conditional rendering can be done using if statements, ternary operators, and logical && operators.`,
     },
+    {
+      Q: `Explain the building blocks of React?`,
+      A: `The five main building blocks of React are:
+
+Components: These are reusable blocks of code that return HTML.
+JSX: It stands for JavaScript and XML and allows to write HTML in React.
+Props and State: props are like function parameters and State is similar to variables.
+Context: This allows data to be passed through components as props in a hierarchy.
+Virtual DOM: It is a lightweight copy of actual DOM which makes DOM manipulation easier.`,
+    },
+    {
+      Q: ` What is Reconciliation in React JS?`,
+      A: `React assesses the necessity for a real DOM update when there’s a change in a component’s props or state. This evaluation involves comparing the newly returned element with the one previously displayed. If they are not equal, React proceeds to update the DOM. This process is referred to as reconciliation`,
+    },
+    {
+      Q: ``,
+      A: ``,
+    },
+    {
+      Q: ``,
+      A: ``,
+    },
   ];
 
   return <QAReturn QA={QA} />;
