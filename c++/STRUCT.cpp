@@ -14,11 +14,18 @@ struct linkedList
    }
 
    // Parameterized constructor
-   linkedList(int x)
+   // linkedList(int x)
+   // {
+   //    cout << "LINKEDLIST CONSTRUCTOR CALLED WITH VALUE " << x << endl;
+   //    val = x;
+   //    next = NULL;
+   // }
+
+   // Constructor with initializer list to set 'val' and 'next'
+   // This initializes 'val' to x and 'next' to NULL
+   linkedList(int x) : val(x), next(NULL)
    {
       cout << "LINKEDLIST CONSTRUCTOR CALLED WITH VALUE " << x << endl;
-      val = x;
-      next = NULL;
    }
 
    // Destructor
