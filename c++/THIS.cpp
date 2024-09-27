@@ -1,3 +1,7 @@
+// this is a special pointer to current object
+// Use -> when you have a pointer to an object (like this).
+// Use . when you're directly dealing with the object itself.
+
 #include <bits/stdc++.h> // Includes all standard C++ libraries (not recommended for large projects)
 using namespace std;     // Allows the use of standard library names (like cout) without prefixing them with std::
 
