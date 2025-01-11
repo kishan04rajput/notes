@@ -10,6 +10,7 @@ import { ReactPage } from "./pages/ReactPage";
 import { NodePage } from "./pages/NodePage";
 import { BootstrapPage } from "./pages/BootstrapPage";
 import { GitPage } from "./pages/GitPage";
+import { TailwindPage } from "./pages/TailwindPage";
 
 function App() {
     return (
@@ -20,6 +21,7 @@ function App() {
                     {/* <Route element={<Navbar />}> */}
                     <Route index path="/" element={<LandingPage />} />
                     <Route path="/CssPage" element={<CssPage />} />
+                    <Route path="/TailwindPage" element={<TailwindPage />} />
                     <Route path="/BootstrapPage" element={<BootstrapPage />} />
                     <Route
                         path="/JavascriptPage"
