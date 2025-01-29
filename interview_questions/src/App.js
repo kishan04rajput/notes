@@ -16,24 +16,30 @@ function App() {
     return (
         <div>
             <BrowserRouter>
-                <Navbar />
-                <Routes>
-                    {/* <Route element={<Navbar />}> */}
-                    <Route index path="/" element={<LandingPage />} />
-                    <Route path="/CssPage" element={<CssPage />} />
-                    <Route path="/TailwindPage" element={<TailwindPage />} />
-                    <Route path="/BootstrapPage" element={<BootstrapPage />} />
-                    <Route
-                        path="/JavascriptPage"
-                        element={<JavascriptPage />}
-                    />
-                    <Route path="/MongoDbPage" element={<MongoDbPage />} />
-                    <Route path="/ExpressPage" element={<ExpressPage />} />
-                    <Route path="/ReactPage" element={<ReactPage />} />
-                    <Route path="/NodePage" element={<NodePage />} />
-                    <Route path="/GitPage" element={<GitPage />} />
-                    {/* </Route> */}
-                </Routes>
+                <div className="flex flex-col gap-24">
+                    <Navbar />
+                    <Routes>
+                        <Route index path="/" element={<LandingPage />} />
+                        <Route path="/CssPage" element={<CssPage />} />
+                        <Route
+                            path="/TailwindPage"
+                            element={<TailwindPage />}
+                        />
+                        <Route
+                            path="/BootstrapPage"
+                            element={<BootstrapPage />}
+                        />
+                        <Route
+                            path="/JavascriptPage"
+                            element={<JavascriptPage />}
+                        />
+                        <Route path="/MongoDbPage" element={<MongoDbPage />} />
+                        <Route path="/ExpressPage" element={<ExpressPage />} />
+                        <Route path="/ReactPage" element={<ReactPage />} />
+                        <Route path="/NodePage" element={<NodePage />} />
+                        <Route path="/GitPage" element={<GitPage />} />
+                    </Routes>
+                </div>
             </BrowserRouter>
         </div>
     );
