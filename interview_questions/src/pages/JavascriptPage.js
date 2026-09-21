@@ -131,9 +131,10 @@ export const JavascriptPage = () => {
             A: `The this keyword is used to access the value of the current context or object in which the code is executing, often used in methods to access properties and other methods of the object.`,
         },
         {
-            Q: `undefined vs not defined`,
-            A: `undefined: A variable that has been declared but not assigned a value is undefined. It is a property of the global object.
-      not defined: If a variable has not been declared, accessing it will result in a ReferenceError, indicating the variable is not defined.`,
+            Q: `null vs undefined vs not-defined`,
+            A: `null: An intentional assignment meaning "no value". typeof null is "object". Value assigned by developer to a variable. const x = null;
+undefined: A variable declared but not assigned a value. typeof undefined is "undefined". Value assigned by JS engine to a variable. const x;
+not-defined: The variable was never declared; accessing it throws ReferenceError. Value not declared. const x = y; (y is not declared)`,
         },
         {
             Q: `What is a lexical environment?`,
