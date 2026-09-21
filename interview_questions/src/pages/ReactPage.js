@@ -257,6 +257,14 @@ Virtual DOM: It is a lightweight copy of actual DOM which makes DOM manipulation
             A: `React assesses the necessity for a real DOM update when there’s a change in a component’s props or state. This evaluation involves comparing the newly returned element with the one previously displayed. If they are not equal, React proceeds to update the DOM. This process is referred to as reconciliation`,
         },
         {
+            Q: `What does mounting a component mean?`,
+            A: `Mounting means a component is created and inserted into the DOM for the first time. After mounting, React runs side effects such as in useEffect(() => { ... }, []).`,
+        },
+        {
+            Q: `What does unmounting a component mean?`,
+            A: `Unmounting means a component is removed from the DOM and destroyed. React runs cleanup logic from the return function in useEffect to avoid memory leaks.`,
+        },
+        {
             Q: ``,
             A: ``,
         },
