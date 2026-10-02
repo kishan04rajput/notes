@@ -1,9 +1,9 @@
-import { HtmlPage } from "./HtmlPage";
+import { QuizPage } from "./QuizPage";
 
 export const LandingPage = () => {
   return (
     <div>
-      <HtmlPage />
+      <QuizPage />
     </div>
   );
 };

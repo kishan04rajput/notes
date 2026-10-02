@@ -9,7 +9,8 @@ export const Navbar = () => {
     };
 
     const listItems = [
-        { to: "/", label: "HTML" },
+        { to: "/", label: "Quiz" },
+        { to: "/HtmlPage", label: "HTML" },
         { to: "/CssPage", label: "CSS" },
         { to: "/TailwindPage", label: "Tailwind" },
         { to: "/BootstrapPage", label: "Bootstrap" },
@@ -19,7 +20,6 @@ export const Navbar = () => {
         { to: "/ReactPage", label: "React" },
         { to: "/NodePage", label: "Node" },
         { to: "/GitPage", label: "GIT" },
-        { to: "/quiz", label: "Quiz" },
     ];
 
     return (
