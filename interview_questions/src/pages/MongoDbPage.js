@@ -1,7 +1,6 @@
 import { QAReturn } from "../components/QAReturn";
 
-export const MongoDbPage = () => {
-  const QA = [
+export const mongoDbQA = [
     {
       Q: `What is MongoDB?`,
       A: `MongoDB is a no-sequel database.`,
@@ -142,5 +141,4 @@ export const MongoDbPage = () => {
 
   
 
-  return <QAReturn QA={QA} />;
-};
+export const MongoDbPage = () => <QAReturn QA={mongoDbQA} />;

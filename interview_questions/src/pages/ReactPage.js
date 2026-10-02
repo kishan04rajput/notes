@@ -1,7 +1,6 @@
 import { QAReturn } from "../components/QAReturn";
 
-export const ReactPage = () => {
-    const QA = [
+export const reactQA = [
         {
             Q: `Difference between redux and contextApi?`,
             A: `The Context API is built into React for simple state management across components. Redux is an external library designed for more complex state management with advanced features like middleware and developer tools.`,
@@ -274,5 +273,4 @@ Virtual DOM: It is a lightweight copy of actual DOM which makes DOM manipulation
         },
     ];
 
-    return <QAReturn QA={QA} />;
-};
+export const ReactPage = () => <QAReturn QA={reactQA} />;

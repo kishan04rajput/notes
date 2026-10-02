@@ -1,7 +1,6 @@
 import { QAReturn } from "../components/QAReturn";
 
-export const CssPage = () => {
-  const QA = [
+export const cssQA = [
     {
       Q: `What is CSS? What are the 5 ways to implement CSS in HTML?`,
       A: `CSS (Cascading Style Sheets) is used to style and layout web pages. The five ways to implement CSS are: inline styles, internal stylesheet, external stylesheet, @import rule, and CSS frameworks/libraries.`,
@@ -72,7 +71,4 @@ export const CssPage = () => {
     },
   ];
 
-  return (
-    <QAReturn QA={QA} />
-  )
-};
+export const CssPage = () => <QAReturn QA={cssQA} />;

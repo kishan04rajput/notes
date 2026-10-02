@@ -1,7 +1,6 @@
 import { QAReturn } from "../components/QAReturn";
 
-export const NodePage = () => {
-  const QA = [
+export const nodeQA = [
     {
       Q: `What is a node?`,
       A: `Node.js is a runtime environment that allows you to run JavaScript code on the server side. It uses the V8 JavaScript engine, which is the same engine used by Google Chrome, to execute JavaScript code outside of a web browser. Node.js is built on an event-driven, non-blocking I/O model, which makes it lightweight and efficient for handling concurrent connections and I/O-heavy operations.`,
@@ -152,5 +151,4 @@ export const NodePage = () => {
     },
   ];
 
-  return <QAReturn QA={QA} />;
-};
+export const NodePage = () => <QAReturn QA={nodeQA} />;

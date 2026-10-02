@@ -1,7 +1,6 @@
 import { QAReturn } from "../components/QAReturn";
 
-export const ExpressPage = () => {
-  const QA = [
+export const expressQA = [
     {
       Q: `What is express?`,
       A: `Express is a web application framework for Node.js, designed for building web applications and APIs.`,
@@ -212,5 +211,4 @@ export const ExpressPage = () => {
     },
   ];
 
-  return <QAReturn QA={QA} />;
-};
+export const ExpressPage = () => <QAReturn QA={expressQA} />;

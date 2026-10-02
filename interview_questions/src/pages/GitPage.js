@@ -1,7 +1,6 @@
 import { QAReturn } from "../components/QAReturn";
 
-export const GitPage = () => {
-  const QA = [
+export const gitQA = [
     {
       Q: `What is git?`,
       A: `Git is a distributed version control system for tracking changes in source code during software development.`,
@@ -220,5 +219,4 @@ export const GitPage = () => {
     },
   ];
 
-  return <QAReturn QA={QA} />;
-};
+export const GitPage = () => <QAReturn QA={gitQA} />;
