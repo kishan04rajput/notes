@@ -1,7 +1,6 @@
 import { QAReturn } from "../components/QAReturn";
 
-export const BootstrapPage = () => {
-  const QA = [
+export const bootstrapQA = [
     {
       Q: `What is Bootstrap? What are the other 5 responsive design frameworks?*`,
       A: `Bootstrap is a popular front-end framework for building responsive websites. Alternatives include Foundation, Bulma, Materialize, Semantic UI, and Tailwind CSS.`,
@@ -48,5 +47,4 @@ export const BootstrapPage = () => {
     },
   ];
 
-  return <QAReturn QA={QA} />;
-};
+export const BootstrapPage = () => <QAReturn QA={bootstrapQA} />;

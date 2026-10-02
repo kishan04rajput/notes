@@ -1,7 +1,6 @@
 import { QAReturn } from "../components/QAReturn";
 
-export const JavascriptPage = () => {
-    const QA = [
+export const javascriptQA = [
         {
             Q: `What is hoisting in javascript?`,
             A: `Hoisting in JavaScript is a behaviour where variable and function declarations are moved to the top of their containing scope during the compilation phase before the code is executed. This means that regardless of where variables and functions are declared within a scope, they are available for use throughout the entire scope, even before they are explicitly declared in the code.`,
@@ -333,5 +332,4 @@ const factorial = function fact(n) {
         },
     ];
 
-    return <QAReturn QA={QA} />;
-};
+export const JavascriptPage = () => <QAReturn QA={javascriptQA} />;

@@ -1,7 +1,6 @@
 import { QAReturn } from "../components/QAReturn";
 
-export const HtmlPage = () => {
-    const QA = [
+export const htmlQA = [
         {
             Q: "What is the difference between relative and absolute position?",
             A: "Relative positioning moves the element based on its original position. Absolute positioning moves the element based on its nearest positioned ancestor or the initial containing block if no ancestor is positioned.",
@@ -205,5 +204,4 @@ Cell: Use CSS (border property) directly on <td> or <th> elements.`,
         // },
     ];
 
-    return <QAReturn QA={QA} />;
-};
+export const HtmlPage = () => <QAReturn QA={htmlQA} />;

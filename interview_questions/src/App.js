@@ -1,15 +1,16 @@
 // import './App.css';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Navbar } from "./components/Navbar";
-import { LandingPage } from "./pages/LandingPage";
-import { JavascriptPage } from "./pages/JavascriptPage";
-import { CssPage } from "./pages/CssPage";
-import { MongoDbPage } from "./pages/MongoDbPage";
-import { ExpressPage } from "./pages/ExpressPage";
-import { ReactPage } from "./pages/ReactPage";
-import { NodePage } from "./pages/NodePage";
 import { BootstrapPage } from "./pages/BootstrapPage";
+import { CssPage } from "./pages/CssPage";
+import { ExpressPage } from "./pages/ExpressPage";
 import { GitPage } from "./pages/GitPage";
+import { HtmlPage } from "./pages/HtmlPage";
+import { JavascriptPage } from "./pages/JavascriptPage";
+import { LandingPage } from "./pages/LandingPage";
+import { MongoDbPage } from "./pages/MongoDbPage";
+import { NodePage } from "./pages/NodePage";
+import { ReactPage } from "./pages/ReactPage";
 import { TailwindPage } from "./pages/TailwindPage";
 
 function App() {
@@ -20,19 +21,11 @@ function App() {
                     <Navbar />
                     <Routes>
                         <Route index path="/" element={<LandingPage />} />
+                        <Route path="/HtmlPage" element={<HtmlPage />} />
                         <Route path="/CssPage" element={<CssPage />} />
-                        <Route
-                            path="/TailwindPage"
-                            element={<TailwindPage />}
-                        />
-                        <Route
-                            path="/BootstrapPage"
-                            element={<BootstrapPage />}
-                        />
-                        <Route
-                            path="/JavascriptPage"
-                            element={<JavascriptPage />}
-                        />
+                        <Route path="/TailwindPage" element={<TailwindPage />} />
+                        <Route path="/BootstrapPage" element={<BootstrapPage />} />
+                        <Route path="/JavascriptPage" element={<JavascriptPage />} />
                         <Route path="/MongoDbPage" element={<MongoDbPage />} />
                         <Route path="/ExpressPage" element={<ExpressPage />} />
                         <Route path="/ReactPage" element={<ReactPage />} />

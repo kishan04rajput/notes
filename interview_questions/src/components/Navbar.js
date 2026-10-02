@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Outlet, NavLink } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
 
 export const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -8,10 +8,24 @@ export const Navbar = () => {
         setIsOpen(!isOpen);
     };
 
+    const listItems = [
+        { to: "/", label: "Quiz" },
+        { to: "/HtmlPage", label: "HTML" },
+        { to: "/CssPage", label: "CSS" },
+        { to: "/TailwindPage", label: "Tailwind" },
+        { to: "/BootstrapPage", label: "Bootstrap" },
+        { to: "/JavascriptPage", label: "JavaScript" },
+        { to: "/MongoDbPage", label: "MongoDB" },
+        { to: "/ExpressPage", label: "Express" },
+        { to: "/ReactPage", label: "React" },
+        { to: "/NodePage", label: "Node" },
+        { to: "/GitPage", label: "GIT" },
+    ];
+
     return (
         <div>
             <nav className="bg-gray-900 border-gray-700 fixed top-0 left-0 right-0 z-100">
-                <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                <div className="max-w-screen-xl flex flex-wrap items-center justify-between p-4 mx-auto">
                     <NavLink
                         to="/"
                         className="flex items-center space-x-3 rtl:space-x-reverse"
@@ -57,127 +71,22 @@ export const Navbar = () => {
                         style={{ overflow: "auto" }}
                     >
                         <ul className="font-medium flex flex-col mt-4 border border-gray-700 rounded-lg bg-gray-900 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-gray-900">
-                            <li className="md:flex md:items-center">
-                                <NavLink
-                                    to="/"
-                                    className={({ isActive }) =>
-                                        isActive
-                                            ? "block w-full text-blue-500 rounded text-center py-2"
-                                            : "block w-full text-white rounded text-center py-2 hover:text-blue-400 md:hover:bg-transparent md:border-0 md:hover:text-blue-400 md:p-0"
+                            {listItems.map((item) => (
+                                <li className="md:flex md:items-center" key={item.to}>
+                                    <NavLink
+                                        onClick={() => setIsOpen(false)}
+                                        to={item.to}
+                                        className={({ isActive }) =>
+                                            isActive
+                                                ? "block w-full text-blue-500 rounded text-center py-2"
+                                                : "block w-full text-white rounded text-center py-2 hover:text-blue-400 md:hover:bg-transparent md:border-0 md:hover:text-blue-400 md:p-0"
                                     }
                                     aria-current="page"
                                 >
-                                    HTML
+                                        {item.label}
                                 </NavLink>
                             </li>
-                            <li className="md:flex md:items-center">
-                                <NavLink
-                                    to="/CssPage"
-                                    className={({ isActive }) =>
-                                        isActive
-                                            ? "block w-full text-blue-500 rounded text-center py-2"
-                                            : "block w-full text-white rounded text-center py-2 hover:text-blue-400 md:hover:bg-transparent md:border-0 md:hover:text-blue-400 md:p-0"
-                                    }
-                                >
-                                    CSS
-                                </NavLink>
-                            </li>
-                            <li className="md:flex md:items-center">
-                                <NavLink
-                                    to="/TailwindPage"
-                                    className={({ isActive }) =>
-                                        isActive
-                                            ? "block w-full text-blue-500 rounded text-center py-2"
-                                            : "block w-full text-white rounded text-center py-2 hover:text-blue-400 md:hover:bg-transparent md:border-0 md:hover:text-blue-400 md:p-0"
-                                    }
-                                >
-                                    Tailwind
-                                </NavLink>
-                            </li>
-                            <li className="md:flex md:items-center">
-                                <NavLink
-                                    to="/BootstrapPage"
-                                    className={({ isActive }) =>
-                                        isActive
-                                            ? "block w-full text-blue-500 rounded text-center py-2"
-                                            : "block w-full text-white rounded text-center py-2 hover:text-blue-400 md:hover:bg-transparent md:border-0 md:hover:text-blue-400 md:p-0"
-                                    }
-                                >
-                                    Bootstrap
-                                </NavLink>
-                            </li>
-                            <li className="md:flex md:items-center">
-                                <NavLink
-                                    to="/JavascriptPage"
-                                    className={({ isActive }) =>
-                                        isActive
-                                            ? "block w-full text-blue-500 rounded text-center py-2"
-                                            : "block w-full text-white rounded text-center py-2 hover:text-blue-400 md:hover:bg-transparent md:border-0 md:hover:text-blue-400 md:p-0"
-                                    }
-                                >
-                                    JavaScript
-                                </NavLink>
-                            </li>
-                            <li className="md:flex md:items-center">
-                                <NavLink
-                                    to="/MongoDbPage"
-                                    className={({ isActive }) =>
-                                        isActive
-                                            ? "block w-full text-blue-500 rounded text-center py-2"
-                                            : "block w-full text-white rounded text-center py-2 hover:text-blue-400 md:hover:bg-transparent md:border-0 md:hover:text-blue-400 md:p-0"
-                                    }
-                                >
-                                    MongoDB
-                                </NavLink>
-                            </li>
-                            <li className="md:flex md:items-center">
-                                <NavLink
-                                    to="/ExpressPage"
-                                    className={({ isActive }) =>
-                                        isActive
-                                            ? "block w-full text-blue-500 rounded text-center py-2"
-                                            : "block w-full text-white rounded text-center py-2 hover:text-blue-400 md:hover:bg-transparent md:border-0 md:hover:text-blue-400 md:p-0"
-                                    }
-                                >
-                                    Express
-                                </NavLink>
-                            </li>
-                            <li className="md:flex md:items-center">
-                                <NavLink
-                                    to="/ReactPage"
-                                    className={({ isActive }) =>
-                                        isActive
-                                            ? "block w-full text-blue-500 rounded text-center py-2"
-                                            : "block w-full text-white rounded text-center py-2 hover:text-blue-400 md:hover:bg-transparent md:border-0 md:hover:text-blue-400 md:p-0"
-                                    }
-                                >
-                                    React
-                                </NavLink>
-                            </li>
-                            <li className="md:flex md:items-center">
-                                <NavLink
-                                    to="/NodePage"
-                                    className={({ isActive }) =>
-                                        isActive
-                                            ? "block w-full text-blue-500 rounded text-center py-2"
-                                            : "block w-full text-white rounded text-center py-2 hover:text-blue-400 md:hover:bg-transparent md:border-0 md:hover:text-blue-400 md:p-0"
-                                    }
-                                >
-                                    Node
-                                </NavLink>
-                            </li>
-                            <li className="md:flex md:items-center">
-                                <NavLink
-                                    to="/GitPage"
-                                    className={({ isActive }) =>
-                                        isActive
-                                            ? "block w-full text-blue-500 rounded text-center py-2"
-                                            : "block w-full text-white rounded text-center py-2 hover:text-blue-400 md:hover:bg-transparent md:border-0 md:hover:text-blue-400 md:p-0"
-                                    }
-                                >
-                                    GIT
-                                </NavLink>
-                            </li>
+                            ))}
                         </ul>
                     </div>
                 </div>

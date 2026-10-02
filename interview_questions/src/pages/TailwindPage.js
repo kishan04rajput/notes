@@ -1,7 +1,6 @@
 import { QAReturn } from "../components/QAReturn";
 
-export const TailwindPage = () => {
-    const QA = [
+export const tailwindQA = [
         {
             Q: `What is Tailwind?`,
             A: `Tailwind CSS is a utility-first CSS framework that helps you quickly build responsive and maintainable designs using pre-defined utility classes. It simplifies styling by allowing you to apply classes directly in your HTML.`,
@@ -40,5 +39,4 @@ export const TailwindPage = () => {
         },
     ];
 
-    return <QAReturn QA={QA} />;
-};
+export const TailwindPage = () => <QAReturn QA={tailwindQA} />;
