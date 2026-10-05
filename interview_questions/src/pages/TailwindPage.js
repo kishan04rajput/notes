@@ -1,4 +1,4 @@
-import { QAReturn } from "../components/QAReturn";
+import { SearchableQAReturn } from "../components/SearchableQAReturn";
 
 export const tailwindQA = [
         {
@@ -39,4 +39,4 @@ export const tailwindQA = [
         },
     ];
 
-export const TailwindPage = () => <QAReturn QA={tailwindQA} />;
+export const TailwindPage = () => <SearchableQAReturn QA={tailwindQA} />;

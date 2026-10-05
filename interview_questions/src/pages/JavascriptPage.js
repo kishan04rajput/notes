@@ -1,4 +1,4 @@
-import { QAReturn } from "../components/QAReturn";
+import { SearchableQAReturn } from "../components/SearchableQAReturn";
 
 export const javascriptQA = [
         {
@@ -332,4 +332,4 @@ const factorial = function fact(n) {
         },
     ];
 
-export const JavascriptPage = () => <QAReturn QA={javascriptQA} />;
+export const JavascriptPage = () => <SearchableQAReturn QA={javascriptQA} />;

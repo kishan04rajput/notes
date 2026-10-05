@@ -1,4 +1,4 @@
-import { QAReturn } from "../components/QAReturn";
+import { SearchableQAReturn } from "../components/SearchableQAReturn";
 
 export const htmlQA = [
         {
@@ -204,4 +204,4 @@ Cell: Use CSS (border property) directly on <td> or <th> elements.`,
         // },
     ];
 
-export const HtmlPage = () => <QAReturn QA={htmlQA} />;
+export const HtmlPage = () => <SearchableQAReturn QA={htmlQA} />;

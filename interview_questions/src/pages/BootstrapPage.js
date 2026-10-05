@@ -1,4 +1,4 @@
-import { QAReturn } from "../components/QAReturn";
+import { SearchableQAReturn } from "../components/SearchableQAReturn";
 
 export const bootstrapQA = [
     {
@@ -47,4 +47,4 @@ export const bootstrapQA = [
     },
   ];
 
-export const BootstrapPage = () => <QAReturn QA={bootstrapQA} />;
+export const BootstrapPage = () => <SearchableQAReturn QA={bootstrapQA} />;

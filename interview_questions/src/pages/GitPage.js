@@ -1,4 +1,4 @@
-import { QAReturn } from "../components/QAReturn";
+import { SearchableQAReturn } from "../components/SearchableQAReturn";
 
 export const gitQA = [
     {
@@ -219,4 +219,4 @@ export const gitQA = [
     },
   ];
 
-export const GitPage = () => <QAReturn QA={gitQA} />;
+export const GitPage = () => <SearchableQAReturn QA={gitQA} />;

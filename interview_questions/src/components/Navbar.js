@@ -24,7 +24,7 @@ export const Navbar = () => {
 
     return (
         <div>
-            <nav className="bg-gray-900 border-gray-700 fixed top-0 left-0 right-0 z-100">
+            <nav className="bg-gray-900 border-gray-700 fixed top-0 left-0 right-0 z-50">
                 <div className="max-w-screen-xl flex flex-wrap items-center justify-between p-4 mx-auto">
                     <NavLink
                         to="/"
@@ -39,6 +39,7 @@ export const Navbar = () => {
                             InterviewQA
                         </span>
                     </NavLink>
+                    {/* Hamburger menu */}
                     <button
                         onClick={toggleMenu}
                         type="button"
@@ -63,10 +64,11 @@ export const Navbar = () => {
                             />
                         </svg>
                     </button>
+                    {/* Navbar links */}
                     <div
                         className={`${
                             isOpen ? "block" : "hidden"
-                        } w-full md:block md:w-auto`}
+                            } w-full md:block md:w-auto`}
                         id="navbar-default"
                         style={{ overflow: "auto" }}
                     >
