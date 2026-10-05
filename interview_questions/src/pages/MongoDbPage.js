@@ -1,4 +1,4 @@
-import { QAReturn } from "../components/QAReturn";
+import { SearchableQAReturn } from "../components/SearchableQAReturn";
 
 export const mongoDbQA = [
     {
@@ -141,4 +141,4 @@ export const mongoDbQA = [
 
   
 
-export const MongoDbPage = () => <QAReturn QA={mongoDbQA} />;
+export const MongoDbPage = () => <SearchableQAReturn QA={mongoDbQA} />;

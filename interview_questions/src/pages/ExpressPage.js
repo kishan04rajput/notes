@@ -1,4 +1,4 @@
-import { QAReturn } from "../components/QAReturn";
+import { SearchableQAReturn } from "../components/SearchableQAReturn";
 
 export const expressQA = [
     {
@@ -211,4 +211,4 @@ export const expressQA = [
     },
   ];
 
-export const ExpressPage = () => <QAReturn QA={expressQA} />;
+export const ExpressPage = () => <SearchableQAReturn QA={expressQA} />;

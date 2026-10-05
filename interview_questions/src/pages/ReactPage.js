@@ -1,4 +1,4 @@
-import { QAReturn } from "../components/QAReturn";
+import { SearchableQAReturn } from "../components/SearchableQAReturn";
 
 export const reactQA = [
         {
@@ -273,4 +273,4 @@ Virtual DOM: It is a lightweight copy of actual DOM which makes DOM manipulation
         },
     ];
 
-export const ReactPage = () => <QAReturn QA={reactQA} />;
+export const ReactPage = () => <SearchableQAReturn QA={reactQA} />;
