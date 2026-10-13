@@ -15,10 +15,14 @@ export const Navbar = () => {
         { to: "/TailwindPage", label: "Tailwind" },
         { to: "/BootstrapPage", label: "Bootstrap" },
         { to: "/JavascriptPage", label: "JavaScript" },
+        { to: "/TypescriptPage", label: "TypeScript" },
         { to: "/MongoDbPage", label: "MongoDB" },
         { to: "/ExpressPage", label: "Express" },
         { to: "/ReactPage", label: "React" },
+        { to: "/ReactNativePage", label: "React Native" },
         { to: "/NodePage", label: "Node" },
+        { to: "/RubyPage", label: "Ruby" },
+        { to: "/RubyOnRailsPage", label: "Ruby on Rails" },
         { to: "/GitPage", label: "GIT" },
     ];
 
