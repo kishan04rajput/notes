@@ -15,16 +15,20 @@ export const Navbar = () => {
         { to: "/TailwindPage", label: "Tailwind" },
         { to: "/BootstrapPage", label: "Bootstrap" },
         { to: "/JavascriptPage", label: "JavaScript" },
+        { to: "/TypescriptPage", label: "TypeScript" },
         { to: "/MongoDbPage", label: "MongoDB" },
         { to: "/ExpressPage", label: "Express" },
         { to: "/ReactPage", label: "React" },
+        { to: "/ReactNativePage", label: "React Native" },
         { to: "/NodePage", label: "Node" },
+        { to: "/RubyPage", label: "Ruby" },
+        { to: "/RubyOnRailsPage", label: "Ruby on Rails" },
         { to: "/GitPage", label: "GIT" },
     ];
 
     return (
         <div>
-            <nav className="bg-gray-900 border-gray-700 fixed top-0 left-0 right-0 z-50">
+            <nav className="bg-gray-900 border-gray-700">
                 <div className="max-w-screen-xl flex flex-wrap items-center justify-between p-4 mx-auto">
                     <NavLink
                         to="/"

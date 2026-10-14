@@ -1,4 +1,3 @@
-// import './App.css';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Navbar } from "./components/Navbar";
 import { BootstrapPage } from "./pages/BootstrapPage";
@@ -10,14 +9,18 @@ import { JavascriptPage } from "./pages/JavascriptPage";
 import { LandingPage } from "./pages/LandingPage";
 import { MongoDbPage } from "./pages/MongoDbPage";
 import { NodePage } from "./pages/NodePage";
+import { ReactNativePage } from "./pages/ReactNativePage";
 import { ReactPage } from "./pages/ReactPage";
+import { RubyOnRailsPage } from "./pages/RubyOnRailsPage";
+import { RubyPage } from "./pages/RubyPage";
 import { TailwindPage } from "./pages/TailwindPage";
+import { TypescriptPage } from "./pages/TypescriptPage";
 
 function App() {
     return (
         <div>
             <BrowserRouter>
-                <div className="flex flex-col gap-24">
+                <div className="flex flex-col">
                     <Navbar />
                     <Routes>
                         <Route index path="/" element={<LandingPage />} />
@@ -26,10 +29,14 @@ function App() {
                         <Route path="/TailwindPage" element={<TailwindPage />} />
                         <Route path="/BootstrapPage" element={<BootstrapPage />} />
                         <Route path="/JavascriptPage" element={<JavascriptPage />} />
+                        <Route path="/TypescriptPage" element={<TypescriptPage />} />
                         <Route path="/MongoDbPage" element={<MongoDbPage />} />
                         <Route path="/ExpressPage" element={<ExpressPage />} />
                         <Route path="/ReactPage" element={<ReactPage />} />
+                        <Route path="/ReactNativePage" element={<ReactNativePage />} />
                         <Route path="/NodePage" element={<NodePage />} />
+                        <Route path="/RubyPage" element={<RubyPage />} />
+                        <Route path="/RubyOnRailsPage" element={<RubyOnRailsPage />} />
                         <Route path="/GitPage" element={<GitPage />} />
                     </Routes>
                 </div>
