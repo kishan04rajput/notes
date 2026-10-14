@@ -21,7 +21,7 @@ function App() {
     return (
         <div>
             <BrowserRouter>
-                <div className="flex flex-col gap-24">
+                <div className="flex flex-col">
                     <Navbar />
                     <Routes>
                         <Route index path="/" element={<LandingPage />} />

@@ -28,7 +28,7 @@ export const Navbar = () => {
 
     return (
         <div>
-            <nav className="bg-gray-900 border-gray-700 fixed top-0 left-0 right-0 z-50">
+            <nav className="bg-gray-900 border-gray-700">
                 <div className="max-w-screen-xl flex flex-wrap items-center justify-between p-4 mx-auto">
                     <NavLink
                         to="/"
